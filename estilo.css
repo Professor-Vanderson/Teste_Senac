@@ -1,0 +1,87 @@
+@media (min-width: 600px) {
+    /* Define regras de estilo que se aplicam apenas quando a largura da tela é maior ou igual a 600 pixels */
+    .main {
+      display: grid; /* Define o layout do elemento 'main' como uma grade */
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* Define seis colunas de largura flexível */
+    }
+  
+    .info1 {
+       grid-column: span 2; /* Define que o elemento 'info1' ocupará 2 colunas na grade */
+       grid-row: span 2; /* Define que o elemento 'info1' ocupará 2 linhas na grade */
+    }
+    
+    .info2 {
+      grid-column: span 2; /* Define que o elemento 'info2' ocupará 2 colunas na grade */
+    }
+    
+    .figure1 {
+      grid-column: span 3; /* Define que o elemento 'figure1' ocupará 3 colunas na grade */
+      grid-row: span 2; /* Define que o elemento 'figure1' ocupará 2 linhas na grade */
+    }
+    .figure6 {
+      grid-column: span 2; /* Define que o elemento 'figure6' ocupará 2 colunas na grade */
+    }
+    .figure7 {
+      grid-column: span 3; /* Define que o elemento 'figure7' ocupará 3 colunas na grade */
+    }
+}
+
+
+/* Define regras de estilo que se aplicam para todos os tamanhos de tela */
+.logo {
+    display: flex; /* Define o layout do elemento 'logo' como flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
+/* Define estilos genéricos para o corpo do documento */
+body {
+    max-width: 1600px; /* Define a largura máxima do corpo do documento */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    font-family: 'Raleway', sans-serif; /* Define a fonte do texto */
+}
+
+header {
+    padding: 10px; /* Adiciona preenchimento ao cabeçalho */
+}
+
+.logo-img {
+    margin-right: 10px; /* Adiciona margem à direita para separar a imagem do texto */
+    height: 60px; /* Define a altura da imagem */
+    transform: scaleX(-1); /* Inverte horizontalmente a imagem */
+}
+
+.logo-text {
+    font-family: 'Lobster', cursive; /* Define a fonte do texto do logo */
+    font-size: 2.6em; /* Define o tamanho da fonte do logo */
+    color: #c3bab9; /* Define a cor do texto do logo */
+    text-shadow: -1px -1px 0 #615655, 1px -1px 0 #615655, -1px 1px 0 #615655, 1px 1px 0 #615655; /* Adiciona um efeito de sombra ao texto */
+}
+
+.figure-img {
+    display: block; /* Define a imagem como bloco */
+    width: 100%; /* Define a largura da imagem como 100% */
+    height: 100%; /* Define a altura da imagem como 100% */
+    object-fit: cover; /* Redimensiona a imagem para cobrir o contêiner, preservando a proporção */
+}
+
+.info1, .info2 {
+    padding: 40px; /* Adiciona preenchimento ao redor dos elementos */
+    background-color: #333; /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+}
+
+h2 {
+    font-size: 2em; /* Define o tamanho da fonte do título */
+    margin-bottom: 1em; /* Adiciona margem inferior ao título */
+}
+
+p {
+    margin-bottom: 1em; /* Adiciona margem inferior aos parágrafos */
+}
+
+.info-link {
+    text-decoration: none; /* Remove a decoração de texto dos links */
+    color: #ff9900; /* Define a cor dos links */
+}
+
